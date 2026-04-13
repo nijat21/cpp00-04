@@ -1,5 +1,5 @@
-#ifndef CONTACT_H
-#define CONTACT_H
+#ifndef CONTACT_HPP
+#define CONTACT_HPP
 
 #include <string>
 
@@ -25,7 +25,8 @@ class Contact {
     void set_nickname(std::string str);
     void set_phone_number(std::string str);
     void set_darkest_secret(std::string str);
-    void add(ContactInput contact);
-}
+    void add(ContactInput c);
+    void print_contact(size_t i);
+};
 
 #endif

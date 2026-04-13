@@ -6,7 +6,7 @@
 /*   By: nismayil <nismayil@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 02:29:27 by nismayil          #+#    #+#             */
-/*   Updated: 2026/04/01 19:14:50 by nismayil         ###   ########.fr       */
+/*   Updated: 2026/04/13 14:04:38 by nismayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ std::string capitalize(std::string str) {
 std::string parse_input(int ac, char **av) {
     std::string str;
     if (ac == 1)
-        str = "*LOUD AND UNBEARABLE FEEDBACK NOISE *";
+        str = "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
     int i = 0;
     while (++i < ac)
         str += capitalize(av[i]);

@@ -2,10 +2,10 @@
 
 CC=c++
 CFLAGS=-Wall -Wextra -Werror -std=c++98
+NAME=test
 
-SRCS:=main.cpp Contact.cpp PhoneBook.cpp utils.cpp
+SRCS:=tests.cpp Account.cpp
 OBJS:=$(SRCS:%.cpp=%.o)
-NAME=phonebook
 
 all: $(NAME)
 
@@ -21,4 +21,4 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re: fclean all	
+re: fclean all
