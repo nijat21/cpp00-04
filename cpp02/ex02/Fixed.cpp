@@ -3,14 +3,12 @@
 #include <iostream>
 #include <limits>
 
-Fixed::Fixed() {
+Fixed::Fixed() : fixedPoint(0) {
     // std::cout << "Default contructor called" << std::endl;
-    fixedPoint = 0;
 }
 
-Fixed::Fixed(const Fixed &src) {
+Fixed::Fixed(const Fixed &src) : fixedPoint(src.fixedPoint) {
     // std::cout << "Copy contructor called" << std::endl;
-    this->fixedPoint = src.fixedPoint;
 }
 
 Fixed &Fixed::operator=(const Fixed &rhs) {

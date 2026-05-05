@@ -2,9 +2,9 @@
 
 Point::Point() : x(0), y(0) {}
 
-Point::Point(const Point &src) {
-    *this = src;
-}
+Point::Point(const Point &src) : x(src.x), y(src.y) {}
+
+Point::Point(const float x, const float y) : x(x), y(y) {}
 
 Point &Point::operator=(const Point &rhs) {
     if (this != &rhs) {
@@ -15,11 +15,6 @@ Point &Point::operator=(const Point &rhs) {
 }
 
 Point::~Point() {}
-
-Point::Point(const float x, const float y) {
-    this->x = Fixed(x);
-    this->y = Fixed(y);
-}
 
 // Get float values
 float Point::getFloatX() const {
